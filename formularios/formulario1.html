@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Autor">
+    <meta name="description" content="Descripción">
+    <meta name="keywords" content="palabras">
+
+     <title>Hoja de Inscripción</title>
+    <link rel="icon" type="image/png" href="restaurante/img/restaurante.png">   
+</head>
+<body>
+
+    <header>
+        <h1>HOJA DE INSCRIPCIÓN</h1>
+        <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Datos Personales</legend>
+                
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                    
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni">
+                </p>
+                
+                <p>
+                    <label for="localidad">Localidad de Nacimiento</label>
+                    <input type="text" id="localidad" name="localidad">
+                    
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="huelva">Huelva</option>
+                        <!-- Aquí se pueden añadir más provincias -->
+                    </select>
+                    
+                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                    <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa">
+                </p>
+                
+                <p>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion">
+                    
+                    <label for="codigo_postal">Código Postal:</label>
+                    <input type="text" id="codigo_postal" name="codigo_postal">
+                </p>
+            </fieldset>
+
+            <!-- Forma de Acceso -->
+            <fieldset>
+                <legend>Forma de Acceso</legend>
+                
+                <div>
+                    <input type="radio" id="acceso_directo" name="forma_acceso" value="directo">
+                    <label for="acceso_directo">Directo</label>
+                    
+                    <ul>
+                        <li>
+                            <input type="radio" id="bachillerato" name="tipo_directo" value="bachillerato">
+                            <label for="bachillerato">Bachillerato Log Modalidad</label>
+                            <input type="text" id="bachillerato_esp" name="bachillerato_esp">
+                        </li>
+                        <li>
+                            <input type="radio" id="experimental" name="tipo_directo" value="experimental">
+                            <label for="experimental">Experimental</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="cou" name="tipo_directo" value="cou">
+                            <label for="cou">COU Opción</label>
+                            <input type="text" id="cou_esp" name="cou_esp">
+                        </li>
+                        <li>
+                            <input type="radio" id="fp2" name="tipo_directo" value="fp2">
+                            <label for="fp2">FP2</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="otros_directo" name="tipo_directo" value="otros">
+                            <label for="otros_directo">Otros (especifique)</label>
+                            <input type="text" id="otros_directo_esp" name="otros_directo_esp">
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <input type="radio" id="prueba_libre" name="forma_acceso" value="prueba_libre">
+                    <label for="prueba_libre">Prueba Libre</label>
+                </div>
+            </fieldset>
+
+            <!-- Documentos Adjuntados -->
+            <fieldset>
+                <legend>Documentos Adjuntados</legend>
+                
+                <p>
+                    <input type="checkbox" id="fotocopia_dni" name="documentos" value="fotocopia_dni">
+                    <label for="fotocopia_dni">Fotocopia DNI</label>
+                    
+                    <input type="checkbox" id="certificado_academico" name="documentos" value="certificado_academico">
+                    <label for="certificado_academico">Certificado Académico</label>
+                </p>
+                
+                <p>
+                    <input type="checkbox" id="otros_documentos" name="documentos" value="otros">
+                    <label for="otros_documentos">Otros documentos (especifique)</label>
+                    <input type="text" id="otros_documentos_esp" name="otros_documentos_esp">
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar Solicitud</button>
+                <button type="reset">Limpiar datos</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <a href="index.html">Volver al menú formularios</a> <br>
+    </footer>
+</body>
+</html>

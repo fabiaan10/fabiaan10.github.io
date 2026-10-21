@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Autor">
+    <meta name="description" content="Descripción">
+    <meta name="keywords" content="palabras">
+    
+    <title>Haz una reserva</title></head>
+    <link rel="icon" type="image/png" href="restaurante/img/restaurante.png"> 
+    
+<body>
+
+    <header>
+        <h2>Haz una reserva</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            
+            <p>
+                <input type="text" id="nombre" name="nombre" placeholder="Su nombre" aria-label="Su nombre" required>
+                <input type="number" id="clientes" name="clientes" placeholder="Número de clientes" aria-label="Número de clientes" required>
+            </p>
+
+            <p>
+                <input type="email" id="email" name="email" placeholder="Su correo electrónico" aria-label="Su correo electrónico" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="su teléfono" aria-label="Su teléfono" required>
+            </p>
+
+            <p>
+                <!-- Usamos input de tipo texto o fecha/hora con placeholder según corresponda -->
+                <input type="date" id="fecha" name="fecha" placeholder="Fecha de la reserva" aria-label="Fecha de la reserva" required>
+                <input type="time" id="hora" name="hora" placeholder="Hora de la reserva" aria-label="Hora de la reserva" required>
+            </p>
+
+            <p>
+                <!-- Se usa un input de texto, aunque para mensajes largos también serviría un <textarea> -->
+                <input type="text" id="mensaje" name="mensaje" placeholder="Su mensaje" aria-label="Su mensaje">
+            </p>
+
+            <p>
+                <button type="submit">SOLICITAR RESERVA</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        
+        <p>Si desea saber cómo protegemos sus datos, consulte nuestra <a href="#">Política de privacidad</a></p>
+        <a href="index.html" > Volver al restaurante</a>
+    </footer>
+
+</body>
+</html>
